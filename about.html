@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about Liquifresh, our mission, and our history. We are committed to providing clean and safe water to the community.">
+    <title>About Us - Liquifresh</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .accordion {
+            background-color: #00bcd4;
+            color: white;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 18px;
+            transition: 0.4s;
+            margin-top: 10px;
+        }
+
+        .active, .accordion:hover {
+            background-color: #00796b;
+        }
+
+        .panel {
+            padding: 0 18px;
+            background-color: white;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a class="link" href="home.html">Home</a>
+        <a class="link" href="about.html">About us</a>
+        <a class="link" href="service.html">Services</a>
+        <a class="link" href="contact.html">Contact</a>
+        <a class="link" href="enquiry.html">Enquiry</a>
+    </nav>
+
+    <h1>ABOUT US</h1> 
+    <h2>Refreshing Every Drop</h2>
+
+    <P>
+        At Liquifresh, we believe water is life and everyone deserves access to clean, safe, and refreshing water every day.<br>
+        We are a trusted water supply company dedicated to providing households, businesses and communities with reliable water <br>
+        delivery solutions that are pure, sustainable, and affordable.
+    </P>
+
+    <h2>Who We Are</h2>
+    <p>Liquifresh was founded with a simple mission: to ensure that every sip you take is fresh, healthy and hydrating. Over the<br>
+        years, we have grown into a dependable water supply partner, serving a wide range of customers from homes and offices to retail<br>
+        outlets and large organizations.</p>
+
+    <h2>What We Do</h2>
+    <table align="center">
+        <td>
+            <ul>
+                <li>Water Delivery: Timely and reliable delivery of purified water straight to your door.</li>
+                <li>Bulk Supply: Safe and convenient water supply for businesses, events, and institutions.</li>
+                <li>Sustainable Practices: We use eco-friendly methods to minimize waste and protect the environment.</li>
+            </ul>
+        </td>
+    </table>
+
+    <button class="accordion">OUR HISTORY</button>
+    <div class="panel">
+        <p>
+            Established in 2023, Liquifresh is a small, business dedicated to selling purified bottled water and provides water refill solutions. 
+            The company was founded to address growing concerns about access to clean drinking water and reducing plastic waste. Liquifresh <br>
+            operates both in store and via home deliveries. The company has built a positive reputation in the community for delivering high 
+            quality bottled water and promoting eco friendly refill stations.
+        </p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.accordion').click(function() {
+                $(this).toggleClass('active');
+                var panel = $(this).next('.panel');
+                if (panel.css('max-height') !== '0px') {
+                    panel.css('max-height', '0px');
+                } else {
+                    panel.css('max-height', panel[0].scrollHeight + 'px');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

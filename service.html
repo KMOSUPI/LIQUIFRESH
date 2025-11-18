@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="servicess.css">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Liquifresh water services including bottled water, JoJo tank rentals, and water truck hire. Quality water solutions in Pretoria.">
+    <meta name="keywords" content="water services, bottled water, JoJo tanks, water truck hire, water delivery Pretoria">
+    <title>Our Services - Liquifresh Water Supply</title>
+</head>
+<body>
+    <nav class="navbar">
+        <a class="link" href="home.html">Home</a>
+        <a class="link" href="about.html">About us</a>
+        <a class="link" href="service.html">Services</a>
+        <a class="link" href="contact.html">Contact</a>
+        <a class="link" href="enquiry.html">Enquiry</a>
+    </nav>
+
+    <div class="main-content">
+        <h1>Our Water Services</h1>
+        <p>Explore our comprehensive range of water solutions for homes, businesses, and events.</p>
+
+        <!-- Search Functionality -->
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search services...">
+        </div>
+
+        <form id="servicesForm" action="enquiry.html" method="GET">
+            <table border="0" width="100%">
+                <tr class="service-item">
+                    <td width="30%"><img src="bottles.jpg" height="125" width="150" alt="6 x 750ml water bottles" class="gallery-img"></td>
+                    <td width="70%">
+                        <h3>6 x 750ml Water Bottles</h3>
+                        <p>Premium purified water in convenient 750ml bottles. Perfect for offices, events, and personal use.</p>
+                        <p><strong>Price: R45 per pack</strong></p>
+                        <label for="bottleQuantity">Quantity:</label>
+                        <input type="number" id="bottleQuantity" name="bottleQuantity" value="0" min="0" max="50">
+                    </td>
+                </tr>
+
+                <tr class="service-item">
+                    <td><img src="jojo.jpeg" alt="1000 liter JoJo water tank" class="gallery-img"></td>
+                    <td>
+                        <h3>1000 Liter JoJo Tank Rental</h3>
+                        <p>Reliable water storage solution for construction sites, events, and emergency water supply.</p>
+                        <p><strong>Rental: R300/week</strong></p>
+                        <label for="tankQuantity">Quantity:</label>
+                        <input type="number" id="tankQuantity" name="tankQuantity" value="0" min="0" max="5">
+                    </td>
+                </tr>
+
+                <tr class="service-item">
+                    <td><img src="truck.png" class="opa" alt="Water truck hire" height="225" width="300" class="gallery-img"></td>
+                    <td>
+                        <h3>Water Truck Hire</h3>
+                        <p>Bulk water delivery for large projects, events, and agricultural needs. Various tank sizes available.</p>
+                        <p><strong>Starting from R850 per delivery</strong></p>
+                        <label for="truckLiters">Required Liters:</label>
+                        <input type="number" id="truckLiters" name="truckLiters" value="0" min="0" max="20000" placeholder="liters">
+                    </td>
+                </tr>
+
+                <tr class="service-item">
+                    <td><img src="5L-Standard-Water-Bottle-45mm-Blue-No-Cap.png" alt="5 liter water bottle" height="225" width="300" class="gallery-img"></td>
+                    <td>
+                        <h3>5 Liter Water Bottles</h3>
+                        <p>Large 5-liter bottles ideal for home use, offices, and small businesses with water dispensers.</p>
+                        <p><strong>Price: R25 per bottle</strong></p>
+                        <label for="fiveLiterQuantity">Quantity:</label>
+                        <input type="number" id="fiveLiterQuantity" name="fiveLiterQuantity" value="0" min="0" max="100">
+                    </td>
+                </tr>
+            </table>
+            
+            <input type="submit" value="Get Quote for Selected Services">
+        </form>
+
+        <div class="section">
+            <h2>Service Areas</h2>
+            <p>We proudly serve the following areas in Gauteng:</p>
+            <ul>
+                <li>Pretoria and surrounding areas</li>
+                <li>Centurion</li>
+                <li>Midrand</li>
+                <li>Johannesburg Northern Suburbs</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Liquifresh Water Supply. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

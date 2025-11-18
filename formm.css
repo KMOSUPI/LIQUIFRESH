@@ -1,0 +1,109 @@
+/* Form Styles */
+form {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 30px;
+    background: #e0f2f1;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #006064;
+    font-size: 16px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group input[type="date"],
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #00bcd4;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #00796b;
+    box-shadow: 0 0 5px rgba(0, 121, 107, 0.3);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.form-group input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    padding: 12px 30px;
+    margin: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"] {
+    background-color: #00bcd4;
+    color: white;
+}
+
+input[type="submit"]:hover {
+    background-color: #00796b;
+}
+
+input[type="reset"] {
+    background-color: #e0e0e0;
+    color: #333;
+}
+
+input[type="reset"]:hover {
+    background-color: #bdbdbd;
+}
+
+/* Error states */
+.form-group input.error,
+.form-group select.error,
+.form-group textarea.error {
+    border-color: #ff4444;
+    background-color: #ffebee;
+}
+
+.error-message {
+    color: #ff4444;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* Responsive forms */
+@media (max-width: 768px) {
+    form {
+        margin: 20px 10px;
+        padding: 20px;
+    }
+    
+    .form-group {
+        margin-bottom: 20px;
+    }
+}

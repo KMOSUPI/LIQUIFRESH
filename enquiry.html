@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Enquire about Liquifresh water services, products, or partnership opportunities. Get quotes for water bottles, tanks, and truck services.">
+    <meta name="keywords" content="water enquiry, water services, water products, partnership, sponsorship, water supply quote">
+    <title>Service Enquiry - Liquifresh Water Supply</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="formm.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a class="link" href="home.html">Home</a>
+        <a class="link" href="about.html">About us</a>
+        <a class="link" href="service.html">Services</a>
+        <a class="link" href="contact.html">Contact</a>
+        <a class="link" href="enquiry.html">Enquiry</a>
+    </nav>
+
+    <div class="main-content">
+        <h1>Service Enquiry</h1>
+        <p>Interested in our services or products? Fill out the form below and we'll provide you with a detailed quotation.</p>
+
+        <form id="enquiryForm" class="enquiry-form">
+            <div class="form-group">
+                <label for="enquiryType">Enquiry Type *</label>
+                <select id="enquiryType" name="enquiryType" required>
+                    <option value="">Select enquiry type</option>
+                    <option value="water-bottles">Water Bottles Purchase</option>
+                    <option value="tank-rental">JoJo Tank Rental</option>
+                    <option value="truck-hire">Water Truck Hire</option>
+                    <option value="partnership">Business Partnership</option>
+                    <option value="sponsorship">Sponsorship Opportunity</option>
+                    <option value="volunteer">Volunteer Program</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="firstName">First Name *</label>
+                <input type="text" id="firstName" name="firstName" required placeholder="Enter your first name">
+            </div>
+
+            <div class="form-group">
+                <label for="lastName">Last Name *</label>
+                <input type="text" id="lastName" name="lastName" required placeholder="Enter your last name">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" name="phone" required placeholder="+27 79 376 4853">
+            </div>
+
+            <div class="form-group">
+                <label for="company">Company/Organization</label>
+                <input type="text" id="company" name="company" placeholder="Your company name (if applicable)">
+            </div>
+
+            <div class="form-group">
+                <label for="quantity">Estimated Quantity/Volume</label>
+                <input type="text" id="quantity" name="quantity" placeholder="e.g., 100 bottles, 5000 liters">
+            </div>
+
+            <div class="form-group">
+                <label for="deliveryDate">Preferred Delivery Date</label>
+                <input type="date" id="deliveryDate" name="deliveryDate">
+            </div>
+
+            <div class="form-group">
+                <label for="budget">Budget Range</label>
+                <select id="budget" name="budget">
+                    <option value="">Select budget range</option>
+                    <option value="under-1000">Under R1,000</option>
+                    <option value="1000-5000">R1,000 - R5,000</option>
+                    <option value="5000-10000">R5,000 - R10,000</option>
+                    <option value="over-10000">Over R10,000</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Additional Requirements *</label>
+                <textarea id="message" name="message" required rows="5" placeholder="Please provide any additional details about your enquiry..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <label>
+                    <input type="checkbox" name="newsletter" checked>
+                    Send me updates about new products and services
+                </label>
+            </div>
+
+            <input type="submit" value="Get Quotation">
+            <input type="reset" value="Clear Form">
+        </form>
+
+        <div class="section">
+            <h2>Why Choose Liquifresh?</h2>
+            <div class="accordion">
+                <h3 class="accordion-header">Quality Assurance</h3>
+                <div class="accordion-content">
+                    <p>All our water products undergo rigorous quality testing to ensure they meet the highest standards of purity and safety.</p>
+                </div>
+                
+                <h3 class="accordion-header">Fast Delivery</h3>
+                <div class="accordion-content">
+                    <p>We offer same-day delivery for orders placed before 12 PM in most areas of Gauteng.</p>
+                </div>
+                
+                <h3 class="accordion-header">Competitive Pricing</h3>
+                <div class="accordion-content">
+                    <p>Get the best value for your money with our competitive pricing and bulk order discounts.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Liquifresh Water Supply. All rights reserved.</p>
+        <p>Clean water for a healthier community</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
